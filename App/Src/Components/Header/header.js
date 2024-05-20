@@ -25,8 +25,9 @@ export default function MenuBar(props) {
 
 			{
 				(props.type != 2) &&
-				<TouchableOpacity onPress={() => props.onPress()}>
-					<Icon name='logout' size={CONSTANTS.Width16}
+				<TouchableOpacity hitSlop={CONSTANTS.normalHitSlop}
+					onPress={() => props.onPress()}>
+					<Icon name='log-out' size={CONSTANTS.Width16}
 						color={COLORS.WHITE} />
 				</TouchableOpacity>
 			}
